@@ -6,7 +6,10 @@ import javax.xml.bind.annotation.XmlRootElement;
 @XmlRootElement(name="row")
 public class Row {
 	@XmlElement
-	public Rate[] exchangerate;
-
+	private Rate[] exchangerate;
+	
+	public Rate[] getExchangerate() {
+		return exchangerate;
+	}
 	
 }
