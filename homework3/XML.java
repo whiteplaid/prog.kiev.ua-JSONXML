@@ -7,5 +7,10 @@ import javax.xml.bind.annotation.XmlRootElement;
 @XmlRootElement(name="exchangerates")
 public class XML {
 	@XmlElement
-	public Row[] row;
+	private Row[] row;
+
+	public Row[] getRow() {
+		return row;
+	}
+	
 }

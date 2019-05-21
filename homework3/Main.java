@@ -16,7 +16,7 @@ public class Main {
         Unmarshaller u = jc.createUnmarshaller();
         XML xml = (XML) u.unmarshal(url);
        
-       for (Row row : xml.row) {
+       for (Row row : xml.getRow()) {
     	   Rate[] rates = row.getExchangerate();
     	   for (Rate rate:rates) {
     		   Field[] fields = rate.getClass().getDeclaredFields();
